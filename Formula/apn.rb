@@ -4,8 +4,8 @@
 class Apn < Formula
   desc "Local-first payment runtime for AI agents"
   homepage "https://github.com/aftercard/agent-payment-node"
-  url "https://github.com/aftercard/agent-payment-node/releases/download/v0.5.3/aftercard-apn-0.5.3.tgz"
-  sha256 "7fd05589d2a3b93eac3be53a8c75a08b5d481c2e94aaf6154a8e7942edc7575c"
+  url "https://github.com/aftercard/agent-payment-node/releases/download/v0.5.4/aftercard-apn-0.5.4.tgz"
+  sha256 "386b64a9d899b6fe5b72bed66c4254bf3c554c09781afab58f221988ede3caf0"
   license "MIT"
 
   depends_on arch: :arm64
@@ -18,6 +18,6 @@ class Apn < Formula
   end
 
   test do
-    assert_match '"product_version":"0.5.3"', shell_output("#{bin}/apn --version")
+    assert_match '"product_version":"0.5.4"', shell_output("#{bin}/apn --version")
   end
 end
